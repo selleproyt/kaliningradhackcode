@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтрация изображений животных</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/static/img/min1.png">
+        <h1>Фильтрация изображений животных</h1>
+    </header>
+
+    <form method="POST" action="/submitone" enctype="multipart/form-data">
+                <label for="image">Загрузите изображение</label>
+                <input type="file" id="image" name="image">
+                <input type="submit" value="Submit"/>
+    </form>
+    <br><br>
+    <form method="POST" action="/submittwo" enctype="multipart/form-data">
+                <label for="zip">Загрузите архив</label>
+                <input type="file" id="zip" name="zip">
+                <input type="submit" value="Submit"/>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Министерство природных ресурсов и экологии </p>
+    </footer>
+
+</body>
+</html>
